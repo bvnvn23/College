@@ -13,7 +13,6 @@ int main()
 {
     while(keepRunning)
     {
-        
         std::cout << "Enter the temperature:";
         std::cin >> temperature;
         
@@ -28,8 +27,6 @@ int main()
         std::cout << "Pick the unit of the temperature C - To Celsius F - To Fahrenheit" << std::endl;
         std::cin >> unit;
         unit = tolower(unit);    
-
-
 
         switch(unit)
         {    
@@ -55,7 +52,6 @@ int main()
 
     return 0;
 }
-
 
 float celsius(float temperature)
 {
