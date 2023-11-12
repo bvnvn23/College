@@ -10,7 +10,7 @@ int main()
 {
     std::cout << "****Average of numbers****" << std::endl;
     
-    std::vector<float> numbers;           // Vector to store the numbers
+    std::vector<float> numbers;           // Vector to store the numbers, thats why we added <vector> function.
     float number;                 
     std::cout << "To stop entering numbers, enter a letter!" << std::endl;
     for (int i = 0; i < 10; i++)
@@ -20,7 +20,7 @@ int main()
             if (std::cin.fail())
             {
                 std::cin.clear();
-                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');  // If the user enters a letter instead of a number loop will break!
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');  // If the user enters a letter instead of a number loop will break! We used here #include <limits> library.
                 break;
             }
             else
