@@ -34,6 +34,7 @@ int main()
     }
     
     std::cout << "The average of the numbers is: " << average(numbers) << std::endl;
+    return 0;
 }
 
 
